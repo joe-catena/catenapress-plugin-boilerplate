@@ -1,5 +1,6 @@
 
-/vendor/*
+vendor/*
 /dist
 js/dist
 styles/dist
+node_modules/*
