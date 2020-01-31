@@ -1,0 +1,14 @@
+{
+  "name": "catena-media/block-example",
+  "description": "Block example boilerplate code.",
+  "autoload": {
+    "psr-4": {
+      "Catenamedia\\CatenaPress\\Blocks\\":"src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Catenamedia\\CatenaPress\\Blocks\\Test\\": "tests/"
+    }
+  }
+}
