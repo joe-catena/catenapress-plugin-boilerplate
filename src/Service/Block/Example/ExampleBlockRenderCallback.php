@@ -8,14 +8,14 @@
 
 namespace Catenamedia\Catenapress\PluginExample\Service\Block\Example;
 
-use Catenamedia\Catenapress\PluginExample\Service\Block\BlockRendererAbstract;
+use Catenamedia\Catenapress\PluginExample\Service\Block\AbstractBlockRenderCallback;
 use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProvider;
 
 /**
  * Class ExampleBlockRendererCallback
  * @package Catenamedia\Catenapress\Blocks\Service\Renderer
  */
-class ExampleBlockRenderer extends BlockRendererAbstract
+class ExampleBlockRenderCallback extends AbstractBlockRenderCallback
 {
 
     /**

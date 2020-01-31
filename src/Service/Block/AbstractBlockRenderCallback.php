@@ -6,7 +6,7 @@ namespace Catenamedia\Catenapress\PluginExample\Service\Block;
  * Interface BlockRendererInterface
  * @package Catenamedia\Catenapress\Blocks\Service\Block\Renderer
  */
-abstract class BlockRendererAbstract
+abstract class AbstractBlockRenderCallback
 {
 
     /**

@@ -25,13 +25,16 @@ class PluginExample {
      */
     private function registerBlocks()
     {
-        $blockRegistry = new  \Catenamedia\Catenapress\Blocks\Service\Block\BlockRegistry();
+        $blockRegistry = new  \Catenamedia\Catenapress\PluginExample\Service\Block\BlockRegistry();
         $blockRegistry->register();
     }
 
+    /**
+     * Registers API routes
+     */
     private function registerAPI()
     {
-        add_action( 'rest_api_init', new \Catenamedia\Catenapress\Blocks\Controller\API\RouteRegistry());
+        add_action( 'rest_api_init', new \Catenamedia\Catenapress\Blocks\Controller\API\RouteRegistryCallback());
     }
 }
 

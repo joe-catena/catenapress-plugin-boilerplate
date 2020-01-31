@@ -10,7 +10,7 @@ use Catenamedia\Catenapress\PluginExample\Controller\API\Example\ExampleGETSchem
  * Class RouteRegistry
  * @package Catenamedia\Catenapress\Blocks\Controller\API
  */
-class RouteRegistry
+class RouteRegistryCallback
 {
 
     /**

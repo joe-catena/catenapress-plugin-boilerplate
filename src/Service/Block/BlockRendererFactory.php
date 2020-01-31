@@ -2,7 +2,7 @@
 
 namespace Catenamedia\Catenapress\PluginExample\Service\Block;
 
-use Catenamedia\Catenapress\PluginExample\Service\Block\Example\ExampleBlockRenderer;
+use Catenamedia\Catenapress\PluginExample\Service\Block\Example\ExampleBlockRenderCallback;
 use Catenamedia\Catenapress\PluginExample\Service\Casino\Adapter\AdapterACF;
 use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProvider;
 
@@ -14,11 +14,11 @@ class BlockRendererFactory
 {
 
     /**
-     * @return ExampleBlockRenderer
+     * @return ExampleBlockRenderCallback
      * @throws \Exception
      */
-    public static function createExampleBlockRendererACF(): ExampleBlockRenderer
+    public static function createExampleBlockRendererACF(): ExampleBlockRenderCallback
     {
-        return new ExampleBlockRenderer(new CasinoProvider(new AdapterACF()));
+        return new ExampleBlockRenderCallback(new CasinoProvider(new AdapterACF()));
     }
 }
