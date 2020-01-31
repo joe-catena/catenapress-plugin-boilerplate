@@ -5,7 +5,7 @@ namespace Catenamedia\Catenapress\PluginExample\Entity;
 
 /**
  * Class Casino
- * @package Catenamedia\Catenapress\Blocks\Entity
+ * @package Catenamedia\Catenapress\PluginExample\Entity
  */
 class Casino
 {

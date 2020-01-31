@@ -3,8 +3,8 @@
 namespace Catenamedia\Catenapress\PluginExample\Service\Block;
 
 /**
- * Interface BlockRendererInterface
- * @package Catenamedia\Catenapress\Blocks\Service\Block\Renderer
+ * Class AbstractBlockRenderCallback
+ * @package Catenamedia\Catenapress\PluginExample\Service\Block
  */
 abstract class AbstractBlockRenderCallback
 {

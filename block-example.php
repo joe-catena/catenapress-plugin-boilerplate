@@ -3,16 +3,17 @@
 /**
  * Plugin name: Example Catenapress plugin
  */
+
 require_once('vendor/autoload.php');
 
 /**
- * Class BlockExample
+ * Class PluginExample
  */
 class PluginExample {
 
 
     /**
-     * BlockExample constructor.
+     * PluginExample constructor.
      */
     public function __construct()
     {

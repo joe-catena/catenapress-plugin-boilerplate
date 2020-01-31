@@ -6,7 +6,7 @@ use Catenamedia\Catenapress\PluginExample\Entity\Casino;
 
 /**
  * Class AdapterACF
- * @package Catenamedia\Catenapress\Blocks\Adapter
+ * @package Catenamedia\Catenapress\PluginExample\Service\Casino\Adapter
  */
 class AdapterACF extends AdapterAbstract
 {

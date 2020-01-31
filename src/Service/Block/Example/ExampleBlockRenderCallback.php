@@ -12,8 +12,8 @@ use Catenamedia\Catenapress\PluginExample\Service\Block\AbstractBlockRenderCallb
 use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProvider;
 
 /**
- * Class ExampleBlockRendererCallback
- * @package Catenamedia\Catenapress\Blocks\Service\Renderer
+ * Class ExampleBlockRenderCallback
+ * @package Catenamedia\Catenapress\PluginExample\Service\Block\Example
  */
 class ExampleBlockRenderCallback extends AbstractBlockRenderCallback
 {

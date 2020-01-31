@@ -7,8 +7,8 @@ use Catenamedia\Catenapress\PluginExample\Service\Casino\Adapter\AdapterACF;
 use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProvider;
 
 /**
- * Class RendererFactory
- * @package Catenamedia\Catenapress\Blocks
+ * Class BlockRendererFactory
+ * @package Catenamedia\Catenapress\PluginExample\Service\Block
  */
 class BlockRendererFactory
 {

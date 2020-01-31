@@ -7,6 +7,7 @@ use Catenamedia\Catenapress\PluginExample\Entity\Casino;
 
 /**
  * Class CasinoProvider
+ * @package Catenamedia\Catenapress\PluginExample\Service\Casino\Provider
  */
 class CasinoProvider
 {

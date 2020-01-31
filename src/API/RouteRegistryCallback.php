@@ -7,8 +7,8 @@ use Catenamedia\Catenapress\PluginExample\API\Example\ExampleGETPermissionCallba
 use Catenamedia\Catenapress\PluginExample\API\Example\ExampleGETSchemaCallback;
 
 /**
- * Class RouteRegistry
- * @package Catenamedia\Catenapress\Blocks\Controller\API
+ * Class RouteRegistryCallback
+ * @package Catenamedia\Catenapress\Blocks\API
  */
 class RouteRegistryCallback
 {

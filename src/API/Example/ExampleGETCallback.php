@@ -3,8 +3,8 @@
 namespace Catenamedia\Catenapress\PluginExample\API\Example;
 
 /**
- * Class ExampleControllerCallback
- * @package Catenamedia\Catenapress\Blocks\Controller\API\Example
+ * Class ExampleGETCallback
+ * @package Catenamedia\Catenapress\PluginExample\API\Example
  */
 class ExampleGETCallback {
 

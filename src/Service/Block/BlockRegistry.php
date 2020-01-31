@@ -4,7 +4,7 @@ namespace Catenamedia\Catenapress\PluginExample\Service\Block;
 
 /**
  * Class BlockRegistry
- * @package Catenamedia\Catenapress\Blocks\Registry
+ * @package Catenamedia\Catenapress\PluginExample\Service\Block
  */
 class BlockRegistry
 {
