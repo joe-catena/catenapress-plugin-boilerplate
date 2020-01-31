@@ -26,7 +26,7 @@ class PluginExample {
      */
     private function registerBlocks()
     {
-        $blockRegistry = new  \Catenamedia\Catenapress\PluginExample\Service\Block\BlockRegistry();
+        $blockRegistry = new \Catenamedia\Catenapress\PluginExample\Service\Block\BlockRegistry();
         $blockRegistry->register();
     }
 

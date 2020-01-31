@@ -3,8 +3,6 @@
 namespace Catenamedia\Catenapress\PluginExample\Service\Block;
 
 use Catenamedia\Catenapress\PluginExample\Service\Block\Casino\CasinoCardRenderCallback;
-use Catenamedia\Catenapress\PluginExample\Service\Casino\Adapter\AdapterACF;
-use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProvider;
 use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProviderFactory;
 
 /**

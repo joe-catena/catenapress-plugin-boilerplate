@@ -5,6 +5,7 @@ namespace Catenamedia\Catenapress\Blocks\API;
 use Catenamedia\Catenapress\PluginExample\API\Example\CasinoGETCallback;
 use Catenamedia\Catenapress\PluginExample\API\Example\CasinoGETPermissionCallback;
 use Catenamedia\Catenapress\PluginExample\API\Example\CasinoGETSchemaCallback;
+use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProviderFactory;
 
 /**
  * Class RouteRegistryCallback
@@ -23,7 +24,7 @@ class RouteRegistryCallback
             [
                 [
                     'methods'   => 'GET',
-                    'callback'  => new CasinoGETCallback(),
+                    'callback'  => new CasinoGETCallback(CasinoProviderFactory::createCatenaProvider()),
                     'permission_callback' => new CasinoGETPermissionCallback(),
                 ],
                 'schema' => new CasinoGETSchemaCallback()
