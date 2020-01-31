@@ -1,26 +1,33 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: aleksandar
+ * Date: 31/01/2020
+ * Time: 11:01
+ */
 
-namespace Catenamedia\Catenapress\Blocks;
+namespace Catenamedia\Catenapress\PluginExample\Service\Block\Example;
 
-use Catenamedia\Catenapress\Blocks\Render\RendererInterface;
+use Catenamedia\Catenapress\PluginExample\Service\Block\BlockRendererAbstract;
+use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProvider;
 
 /**
- * Class RenderBlockHTML
- * @package Catenamedia\Catenapress\Blocks
+ * Class ExampleBlockRendererCallback
+ * @package Catenamedia\Catenapress\Blocks\Service\Renderer
  */
-class RendererBlockHTML implements RendererInterface
+class ExampleBlockRenderer extends BlockRendererAbstract
 {
 
     /**
-     * @var \CasinoProvider
+     * @var CasinoProvider
      */
     private $provider;
 
     /**
-     * RenderBlockHTML constructor.
-     * @param \CasinoProvider $provider
-     */
-    public function __construct(\CasinoProvider $provider)
+ * ExampleBlockRendererCallback constructor.
+ * @param CasinoProvider $provider
+ */
+    public function __construct(CasinoProvider $provider)
     {
         $this->provider = $provider;
     }
@@ -29,7 +36,7 @@ class RendererBlockHTML implements RendererInterface
      * @param array $attributes
      * @return string
      */
-    public function render(array $attributes): string
+    protected function render(array $attributes): string
     {
         if (!isset($attributes['id'])) {
             $this->renderNoCasino();
@@ -52,5 +59,4 @@ class RendererBlockHTML implements RendererInterface
     {
         return '<div>No casino</div>';
     }
-
 }

@@ -3,12 +3,12 @@
   "description": "Block example boilerplate code.",
   "autoload": {
     "psr-4": {
-      "Catenamedia\\CatenaPress\\Blocks\\":"src/"
+      "Catenamedia\\CatenaPress\\PluginExample\\":"src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Catenamedia\\CatenaPress\\Blocks\\Test\\": "tests/"
+      "Catenamedia\\CatenaPress\\PluginExample\\Test\\": "tests/"
     }
   }
 }

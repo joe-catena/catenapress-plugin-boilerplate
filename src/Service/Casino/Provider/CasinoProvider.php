@@ -1,7 +1,9 @@
 <?php
 
-use \Catenamedia\Catenapress\Blocks\Adapter\AdapterAbstract;
-use Catenamedia\Catenapress\Blocks\Entity\Casino;
+namespace Catenamedia\Catenapress\PluginExample\Service\Casino\Provider;
+
+use Catenamedia\Catenapress\PluginExample\Service\Casino\Adapter\AdapterAbstract;
+use Catenamedia\Catenapress\PluginExample\Entity\Casino;
 
 /**
  * Class CasinoProvider

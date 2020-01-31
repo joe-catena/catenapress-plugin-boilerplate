@@ -1,8 +1,8 @@
 <?php
 
-namespace Catenamedia\Catenapress\Blocks\Adapter;
+namespace Catenamedia\Catenapress\PluginExample\Service\Casino\Adapter;
 
-use Catenamedia\Catenapress\Blocks\Entity\Casino;
+use Catenamedia\Catenapress\PluginExample\Entity\Casino;
 
 /**
  * Class AdapterACF

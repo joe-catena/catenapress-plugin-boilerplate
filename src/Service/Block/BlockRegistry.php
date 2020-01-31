@@ -1,12 +1,12 @@
 <?php
 
-namespace Catenamedia\Catenapress\Blocks\Registry;
+namespace Catenamedia\Catenapress\PluginExample\Service\Block;
 
 /**
  * Class BlockRegistry
  * @package Catenamedia\Catenapress\Blocks\Registry
  */
-class BlockRegistryDefault extends BlockRegistry
+class BlockRegistry
 {
 
     /**
@@ -14,14 +14,14 @@ class BlockRegistryDefault extends BlockRegistry
      */
     public function register()
     {
-        self::registerScripts();
-        $this->registerBlock();
+        add_action('enqueue_block_editor_assets', [$this, 'registerScriptsCallback']);
+        $this->registerBlocks();
     }
 
     /**
      * Registers necessary JS and CSS
      */
-    protected static function registerScripts()
+    public function registerScriptsCallback()
     {
         wp_register_script(
             'example-block-editor-script',
@@ -51,12 +51,12 @@ class BlockRegistryDefault extends BlockRegistry
     /**
      * Registers Gutenberg block
      */
-    protected function registerBlock()
+    protected function registerBlocks()
     {
         register_block_type(
             'catenamedia/blocks/example-block',
             [
-                'render_callback' => [$this, 'renderCallback'],
+                'render_callback' => BlockRendererFactory::createExampleBlockRendererACF(),
                 'editor_script' => 'example-block-editor-script',
                 'editor_style' => 'example-block-editor-style',
                 'script' => 'example-block-script',
@@ -64,22 +64,5 @@ class BlockRegistryDefault extends BlockRegistry
                 'attributes' => ['id' => ['type' => 'string']]
             ]
         );
-    }
-
-    /**
-     * @param array $attributes
-     * @return string
-     */
-    public function renderCallback(array $attributes): string
-    {
-        try {
-            $render = \Catenamedia\Catenapress\Blocks\RendererFactory::createRendererACFHTML();
-        } catch (\Exception $ex) {
-            error_log($ex->getMessage()."\n".$ex->getTraceAsString());
-
-            return '<div class="error">Cannot load Casino</div>';
-        }
-
-        return $render->render($attributes);
     }
 }

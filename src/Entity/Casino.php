@@ -1,6 +1,6 @@
 <?php
 
-namespace Catenamedia\Catenapress\Blocks\Entity;
+namespace Catenamedia\Catenapress\PluginExample\Entity;
 
 
 /**
