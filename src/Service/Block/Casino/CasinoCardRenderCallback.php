@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aleksandar
- * Date: 31/01/2020
- * Time: 11:01
- */
 
-namespace Catenamedia\Catenapress\PluginExample\Service\Block\Example;
+namespace Catenamedia\Catenapress\PluginExample\Service\Block\Casino;
 
 use Catenamedia\Catenapress\PluginExample\Service\Block\AbstractBlockRenderCallback;
 use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProvider;
@@ -15,7 +9,7 @@ use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProvider
  * Class ExampleBlockRenderCallback
  * @package Catenamedia\Catenapress\PluginExample\Service\Block\Example
  */
-class ExampleBlockRenderCallback extends AbstractBlockRenderCallback
+class CasinoCardRenderCallback extends AbstractBlockRenderCallback
 {
 
     /**

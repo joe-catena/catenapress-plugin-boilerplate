@@ -3,20 +3,18 @@
 namespace Catenamedia\Catenapress\PluginExample\API\Example;
 
 /**
- * Class ExampleGETSchemaCallback
+ * Class ExampleGETCallback
  * @package Catenamedia\Catenapress\PluginExample\API\Example
  */
-class ExampleGETSchemaCallback {
-
+class CasinoGETCallback {
 
     /**
-     * Returns schema
-     *
      * @param \WP_REST_Request $request
-     * @return array
+     * @return \WP_REST_Response
      */
-    public function __invoke(\WP_REST_Request $request): array
+    public function __invoke(\WP_REST_Request $request): \WP_REST_Response
     {
-        return [];
+        return \rest_ensure_response([]);
     }
+
 }

@@ -2,9 +2,10 @@
 
 namespace Catenamedia\Catenapress\PluginExample\Service\Block;
 
-use Catenamedia\Catenapress\PluginExample\Service\Block\Example\ExampleBlockRenderCallback;
+use Catenamedia\Catenapress\PluginExample\Service\Block\Casino\CasinoCardRenderCallback;
 use Catenamedia\Catenapress\PluginExample\Service\Casino\Adapter\AdapterACF;
 use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProvider;
+use Catenamedia\Catenapress\PluginExample\Service\Casino\Provider\CasinoProviderFactory;
 
 /**
  * Class BlockRendererFactory
@@ -14,11 +15,20 @@ class BlockRendererFactory
 {
 
     /**
-     * @return ExampleBlockRenderCallback
+     * @return CasinoCardRenderCallback
      * @throws \Exception
      */
-    public static function createExampleBlockRendererACF(): ExampleBlockRenderCallback
+    public static function createCasinoCardRendererACF(): CasinoCardRenderCallback
     {
-        return new ExampleBlockRenderCallback(new CasinoProvider(new AdapterACF()));
+        return new CasinoCardRenderCallback(CasinoProviderFactory::createACFProvider());
+    }
+
+    /**
+     * @return CasinoCardRenderCallback
+     * @throws \Exception
+     */
+    public static function createCasinoCardRendererCatena(): CasinoCardRenderCallback
+    {
+        return new CasinoCardRenderCallback(CasinoProviderFactory::createCatenaProvider());
     }
 }

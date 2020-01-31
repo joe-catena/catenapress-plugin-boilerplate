@@ -2,9 +2,9 @@
 
 namespace Catenamedia\Catenapress\Blocks\API;
 
-use Catenamedia\Catenapress\PluginExample\API\Example\ExampleGETCallback;
-use Catenamedia\Catenapress\PluginExample\API\Example\ExampleGETPermissionCallback;
-use Catenamedia\Catenapress\PluginExample\API\Example\ExampleGETSchemaCallback;
+use Catenamedia\Catenapress\PluginExample\API\Example\CasinoGETCallback;
+use Catenamedia\Catenapress\PluginExample\API\Example\CasinoGETPermissionCallback;
+use Catenamedia\Catenapress\PluginExample\API\Example\CasinoGETSchemaCallback;
 
 /**
  * Class RouteRegistryCallback
@@ -23,10 +23,10 @@ class RouteRegistryCallback
             [
                 [
                     'methods'   => 'GET',
-                    'callback'  => new ExampleGETCallback(),
-                    'permission_callback' => new ExampleGETPermissionCallback(),
+                    'callback'  => new CasinoGETCallback(),
+                    'permission_callback' => new CasinoGETPermissionCallback(),
                 ],
-                'schema' => new ExampleGETSchemaCallback()
+                'schema' => new CasinoGETSchemaCallback()
             ]
         );
     }

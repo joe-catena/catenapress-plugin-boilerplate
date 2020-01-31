@@ -24,25 +24,25 @@ class BlockRegistry
     public function registerScriptsCallback()
     {
         wp_register_script(
-            'example-block-editor-script',
+            'casino-card-block-editor-script',
             plugins_url('js/dist/editor.js', __FILE__),
             []
         );
 
         wp_register_script(
-            'example-block-script',
+            'casino-card-block-script',
             plugins_url('js/dist/script.js', __FILE__),
             []
         );
 
         wp_register_style(
-            'example-block-editor-style',
+            'casino-card-block-editor-style',
             plugins_url('styles/dist/editor.css', __FILE__),
             array('wp-edit-blocks')
         );
 
         wp_register_style(
-            'example-block-style',
+            'casino-card-block-style',
             plugins_url('styles/dist/block.css', __FILE__)
         );
 
@@ -54,13 +54,24 @@ class BlockRegistry
     protected function registerBlocks()
     {
         register_block_type(
-            'catenamedia/blocks/example-block',
+            'catenamedia/blocks/casino-card-wp-data',
             [
-                'render_callback' => BlockRendererFactory::createExampleBlockRendererACF(),
-                'editor_script' => 'example-block-editor-script',
-                'editor_style' => 'example-block-editor-style',
-                'script' => 'example-block-script',
-                'style' => 'example-block-style',
+                'render_callback' => BlockRendererFactory::createCasinoCardRendererACF(),
+                'editor_script' => 'casino-card-block-editor-script',
+                'editor_style' => 'casino-card-block-editor-style',
+                'script' => 'casino-card-block-script',
+                'style' => 'casino-card-block-style',
+                'attributes' => ['id' => ['type' => 'string']]
+            ]
+        );
+        register_block_type(
+            'catenamedia/blocks/casino-card-brands-ms-data',
+            [
+                'render_callback' => BlockRendererFactory::createCasinoCardRendererCatena(),
+                'editor_script' => 'casino-card-block-editor-script',
+                'editor_style' => 'casino-card-block-editor-style',
+                'script' => 'casino-card-block-script',
+                'style' => 'casino-card-block-style',
                 'attributes' => ['id' => ['type' => 'string']]
             ]
         );

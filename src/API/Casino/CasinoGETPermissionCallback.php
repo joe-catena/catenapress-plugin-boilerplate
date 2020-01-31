@@ -6,7 +6,7 @@ namespace Catenamedia\Catenapress\PluginExample\API\Example;
  * Class ExampleGETPermissionCallback
  * @package Catenamedia\Catenapress\PluginExample\API\Example
  */
-class ExampleGETPermissionCallback {
+class CasinoGETPermissionCallback {
 
 
     /**

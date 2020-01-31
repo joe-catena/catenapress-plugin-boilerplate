@@ -35,7 +35,7 @@ class AdapterACF extends AdapterAbstract
 
         $fields = get_fields($post->ID);
 
-        return $this->toCasino($post->ID, $post->post_title, $fields['bonus_1st']);
+        return Casino::toCasino($post->ID, $post->post_title, $fields['bonus_1st']);
     }
 
 

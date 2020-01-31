@@ -17,21 +17,4 @@ abstract class AdapterAbstract
      */
     abstract public function getById($id): ?Casino;
 
-    /**
-     * @param int $id
-     * @param string $title
-     * @param string $firstBonus
-     * @return Casino
-     */
-    protected function toCasino(int $id, string $title, string $firstBonus) : Casino
-    {
-        $result = new Casino();
-        $result->setId($id)
-            ->setTitle($title)
-            ->setFirstBonus($firstBonus)
-        ;
-
-        return $result;
-    }
-
 }

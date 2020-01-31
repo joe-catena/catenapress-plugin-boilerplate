@@ -83,6 +83,21 @@ class Casino
     }
 
 
+    /**
+     * @param $title
+     * @param $firstBonus
+     * @return Casino
+     */
+    public static function toCasino($id, string $title, string $firstBonus): Casino
+    {
+        $casino =  new Casino();
+        $casino->setId($id)
+            ->setFirstBonus($firstBonus)
+            ->setTitle($title)
+        ;
+        return $casino;
+    }
+
 
 
 }
