@@ -34,7 +34,7 @@ class PluginExample {
      */
     private function registerAPI()
     {
-        add_action( 'rest_api_init', new \Catenamedia\Catenapress\Blocks\Controller\API\RouteRegistryCallback());
+        add_action( 'rest_api_init', new \Catenamedia\Catenapress\Blocks\API\RouteRegistryCallback());
     }
 }
 

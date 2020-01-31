@@ -1,6 +1,6 @@
 <?php
 
-namespace Catenamedia\Catenapress\PluginExample\Controller\API\Example;
+namespace Catenamedia\Catenapress\PluginExample\API\Example;
 
 /**
  * Class ExampleControllerPermissionCallback

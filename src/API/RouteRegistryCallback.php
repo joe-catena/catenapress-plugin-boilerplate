@@ -1,10 +1,10 @@
 <?php
 
-namespace Catenamedia\Catenapress\Blocks\Controller\API;
+namespace Catenamedia\Catenapress\Blocks\API;
 
-use Catenamedia\Catenapress\PluginExample\Controller\API\Example\ExampleGETCallback;
-use Catenamedia\Catenapress\PluginExample\Controller\API\Example\ExampleGETPermissionCallback;
-use Catenamedia\Catenapress\PluginExample\Controller\API\Example\ExampleGETSchemaCallback;
+use Catenamedia\Catenapress\PluginExample\API\Example\ExampleGETCallback;
+use Catenamedia\Catenapress\PluginExample\API\Example\ExampleGETPermissionCallback;
+use Catenamedia\Catenapress\PluginExample\API\Example\ExampleGETSchemaCallback;
 
 /**
  * Class RouteRegistry
